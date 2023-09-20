@@ -4,9 +4,7 @@ import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class PrincipalComListas {
         var meuFilme3 = new Filme("Avatar",2012);
         Serie minhaSerie = new Serie("Lost",2000);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
         lista.add(meuFilme);
         lista.add(meuFilme2);
         lista.add(meuFilme3);
