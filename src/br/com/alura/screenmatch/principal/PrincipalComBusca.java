@@ -16,7 +16,8 @@ public class PrincipalComBusca {
         Scanner leitura = new Scanner(System.in);
         var busca = leitura.nextLine();
 
-        String endereco ="http://www.omdbapi.com/?t="+ busca +"&apikey=af93aee7"
+        String endereco ="http://www.omdbapi.com/?t="+ busca +"&apikey=af93aee7";
+
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
