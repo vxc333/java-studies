@@ -30,5 +30,5 @@ public class PrincipalComBusca {
         Gson gson = new Gson();
         Titulo meuTitulo = gson.fromJson(response.body(), Titulo.class);
         System.out.println(meuTitulo);
-    }
+    } 
 }
